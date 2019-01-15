@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+
 class Navbar extends Component {
   render() {
     return (
@@ -18,30 +20,19 @@ class Navbar extends Component {
               </div>
               <div id="navbarMenuHeroA" class="navbar-menu">
                 <div class="navbar-end">
-                  <a class="navbar-item" href="google.com">
+                  <Link class="navbar-item" to="/">
                     Home
-                  </a>
-                  <a class="navbar-item">
+                  </Link>
+                  <Link class="navbar-item" to="/login">
                     Login
-                  </a>
-                  <a class="navbar-item">
+                  </Link>
+                  <Link class="navbar-item" to='/register'>
                     Signup
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </nav>
-        </div>
-
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <h1 class="title podhub">
-              The easiest way to start, maintain and grow a podcast
-            </h1>
-            <h2 class="subtitle is-3">
-              Welcome to Podhub
-            </h2>
-          </div>
         </div>
       </section>
     );
